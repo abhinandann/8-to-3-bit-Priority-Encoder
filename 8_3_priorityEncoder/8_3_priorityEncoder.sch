@@ -37,6 +37,7 @@ LIBS:eSim_Sources
 LIBS:eSim_Subckt
 LIBS:eSim_Nghdl
 LIBS:eSim_Ngveri
+LIBS:8_3_priorityEncoder-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -126,7 +127,6 @@ Wire Wire Line
 	9850 1750 9850 2600
 Wire Wire Line
 	9600 2400 9850 2400
-Connection ~ 9850 2400
 Wire Wire Line
 	9600 2050 9850 2050
 Connection ~ 9850 2050
@@ -469,17 +469,6 @@ Text GLabel 3050 1350 0    39   Input ~ 0
 I6
 Text GLabel 3350 1350 0    39   Input ~ 0
 I7
-$Comp
-L PWR_FLAG #FLG03
-U 1 1 621F46E1
-P 9850 2600
-F 0 "#FLG03" H 9850 2675 50  0001 C CNN
-F 1 "PWR_FLAG" H 9850 2750 50  0000 C CNN
-F 2 "" H 9850 2600 50  0001 C CNN
-F 3 "" H 9850 2600 50  0001 C CNN
-	1    9850 2600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	900  1950 900  4600
 Wire Wire Line
@@ -505,4 +494,58 @@ Connection ~ 900  3950
 Wire Wire Line
 	1200 4300 900  4300
 Connection ~ 900  4300
+Wire Notes Line
+	4450 1700 4450 2800
+Wire Notes Line
+	4450 2800 5400 2800
+Wire Notes Line
+	5400 2800 5400 1700
+Wire Notes Line
+	5400 1700 4450 1700
+Wire Notes Line
+	7100 1650 7100 2300
+Wire Notes Line
+	7100 2300 7950 2300
+Wire Notes Line
+	7950 2300 7950 1650
+Wire Notes Line
+	7950 1650 7100 1650
+Wire Notes Line
+	5600 1650 6900 1650
+Wire Notes Line
+	6900 2950 5600 2950
+Wire Notes Line
+	6900 1650 6900 2950
+Wire Notes Line
+	5600 2950 5600 1650
+Wire Notes Line
+	1950 900  1950 1450
+Wire Notes Line
+	1950 1450 3700 1450
+Wire Notes Line
+	3700 1450 3700 850 
+Wire Notes Line
+	1950 900  3700 900 
+Wire Notes Line
+	8400 800  8400 1400
+Wire Notes Line
+	8400 1400 9500 1400
+Wire Notes Line
+	9500 1400 9500 800 
+Wire Notes Line
+	9500 800  8400 800 
+Wire Notes Line
+	9850 2400 9850 2450
+Connection ~ 9850 2400
+Connection ~ 9850 1750
+Text Notes 2600 850  0    39   ~ 0
+Input ports\n
+Text Notes 4700 1750 0    39   ~ 0
+Analog to Digital\n\n
+Text Notes 5850 1600 0    39   ~ 0
+8-to-3-bit priority encoder
+Text Notes 7250 1600 0    39   ~ 0
+Digital to Analog\n
+Text Notes 8750 750  0    39   ~ 0
+Output Ports\n
 $EndSCHEMATC
