@@ -8,7 +8,14 @@
 #### 2.[eSIM EDA TOOL]() 
 #### 3.[Makerchip]()
 #### 4.[CIRCUIT DESIGN]()
+  ##### i) [Reference Circuit]()
+  ##### ii) [Reference Waveforms]()
 #### 5.[IMPLEMENTATION]()
+ ##### i) [Verilog Code]()
+ ##### ii) [Makerchip plots]()
+ ##### iii) [Schematic Diagram]()
+ ##### iv) [Netlists]()
+ #####  v) [Ngspice Plots]()
 #### 6.[REFERENCES]()
 #### 7.[AKNOWLEDGEMENT]()
 #### 8.[AUTHOR]()
@@ -35,7 +42,7 @@ Truth Table for 8-to-3-bit Prirority Encoder:
 | I7 | I6 | I5 | I4 | I3 | I2 | I1 | I0 | Q2 | Q1 | Q0 | 
 | :--- |:---| :---| :-- |:-- |:--:|--:|--:|--:|--:|--:|
 |0	|0|	0|	0|	0|	0|	0|	1|	0|	0|	0|
-|0	|0| 0|	0|	0|	0|	1|	x|	0|  0|	1|
+|0	|0|     0|	0|	0|	0|	1|	x|	0|      0|	1|
 |0	|0|	0|	0|	0|	1|	x|	x|	0|	1|	0|
 |0	|0|	0|	0|	1|	x|	x|	x|	0|	1|	1|
 |0	|0|	0|	1|	x|	x|	x|	x|	1|	0|	0|
@@ -49,6 +56,15 @@ By analysing the above truth table, 8-to-3-bit Prirority Encoder has following l
 * Q2 = I4+I5+I6+I7
 
 ADC bridge is used to convert the analog input to corresponding digital input, which is given input to the priority encoder. The ADC bridge can be designed using voltage divider resistors and operational amplifier as a comparator, which is also called as flash ADC. Similarly, the DAC bridge is used to convert the digital output into analog form. The DAC bridge can be designed using R-2R resistors and operational amplifier DAC, which use two precision resistors to convert a digital binary number into an analog output signal proportional to the value of the digital number.
+
+#### Reference Circuit
+
+![2022_02_28 10_37 pm Office Lens](https://user-images.githubusercontent.com/91964227/156763089-3b1be9d1-9b06-4540-8d1d-7e2f0cb5a62e.jpg)
+
+#### Reference Waveforms
+
+![1646064727840](https://user-images.githubusercontent.com/91964227/156763256-344aaaed-a965-4751-8dd5-2344420bba41.jpg)
+
 
 ### 5. IMPLEMENTATION
 
@@ -192,3 +208,47 @@ plot v(q2)
 ###### Q2 = I4+I5+I6+I7
 ![q2](https://user-images.githubusercontent.com/91964227/156745676-c389e84d-3e64-45bf-bc32-bf4ecf340b83.JPG)
 
+### 6. Steps to run generate NgVeri Model
+1. Open eSim
+2. Run NgVeri-Makerchip
+3. Add top level verilog file in Makerchip Tab
+4. click on Edit in makerchip to simulate the verilog code
+5. Click on NgVeri tab
+6. Add dependency files(If any)
+7. Click on Run Verilog to NgSpice Converter
+8. Debug if any errors
+9. Model created successfully
+
+### 7. Steps to run this project
+1. Open new terminal
+2. Clone this project using the following command
+```
+git clone https://github.com/abhinandann/8-to-3-bit-Priority-Encoder.git
+```
+3. Change Directory 
+```
+cd esim-workspace/8_3_priorityencoder
+```
+4. Run Ngspice:
+```
+ngspice 8_3_priorityencoder.cir.out
+```
+5. To run the project in eSim:
+* Run eSim
+* Load the project
+* Open eeSchema
+
+### 8. REFERENCES
+1. WatElectronics.com. 2022. Priority Encoder : Truth Table, Differences & Its Applications. Available [HERE](https://www.watelectronics.com/priority-encoder/).
+2. Esim.fossee.in. 2022. Resources | eSim. Available [HERE](https://esim.fossee.in/resources)
+
+### 9. AKNOWLEDGEMENT
+1. FOSSEE, IIT Bombay
+2. Steve Hoover, Founder, Redwood EDA
+3. [Kunal Ghosh](https://github.com/kunalg123), Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
+4. [Sumanto kar](https://github.com/Eyantra698Sumanto), Sr. Project Technical Assistant, IIT BOMBAY
+
+### 10. AUTHOR
+
+ABHINANDAN R APPANNAVAR, 6th SEM B.E (ECE), SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
+* Contact: abhinandan7353@gmail.com
