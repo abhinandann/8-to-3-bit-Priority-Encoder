@@ -4,23 +4,23 @@
 
 
 ## Table of Contents
-#### 1.[ABSTRACT]()
-#### 2.[eSIM EDA TOOL]() 
-#### 3.[Makerchip]()
-#### 4.[CIRCUIT DESIGN]()
-  ##### i) [Reference Circuit]()
-  ##### ii) [Reference Waveforms]()
-#### 5.[IMPLEMENTATION]()
- ##### i) [Verilog Code]()
- ##### ii) [Makerchip plots]()
- ##### iii) [Schematic Diagram]()
- ##### iv) [Netlists]()
- #####  v) [Ngspice Plots]()
-####  6. [STEPS TO GENERATE NgVeri MODEL]()
-####  7. [STEPS TO RUN THE PROJECT]()
-#### 8.[REFERENCES]()
-#### 9.[AKNOWLEDGEMENT]()
-#### 10.[AUTHOR]()
+#### 1.[ABSTRACT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#1-abstract)
+#### 2.[eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#2-esim-eda-tool) 
+#### 3.[Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#3-makerchip)
+#### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-circuit-design)
+  ##### i) [Reference Circuit](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-circuit)
+  ##### ii) [Reference Waveforms](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-waveforms)
+#### 5.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#5-implementation)
+ ##### i) [Verilog Code](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilog-code-for-8-to-3-bit-prirority-encoder)
+ ##### ii) [Makerchip plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip-plots)
+ ##### iii) [Schematic Diagram](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#schematic-diagram)
+ ##### iv) [Netlists](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#netlists)
+ #####  v) [Ngspice Plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#ngspice-plots)
+####  6. [STEPS TO GENERATE NgVeri MODEL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#6-steps-to-generate-ngveri-model-1)
+####  7. [STEPS TO RUN THE PROJECT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#7-steps-to-run-the-project-1)
+#### 8.[REFERENCES](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#8-references)
+#### 9.[AKNOWLEDGEMENT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#9-aknowledgement)
+#### 10.[AUTHOR](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#10-author)
 
 ### 1. ABSTRACT
 
@@ -41,8 +41,9 @@ More details on Makerchip can be found [here](https://www.makerchip.com/)
 8-to-3-bit priority encoder consists of 8 inputs: I8 to I1 and 3 outputs: Q2, Q1 and Q0. Each input line corresponds to each octal digit and three outputs generate corresponding binary code. Priority encoder gives output according to highest priority given to the input. If there are two or more inputs are logic high simultaneously then the input with the highest priority is considered by ignoring all other input lines. The input that has the highest priority is encoded first rather than other input lines. Hence, the generated output is based on the priority assigned to the inputs.
 
 Truth Table for 8-to-3-bit Prirority Encoder:
+
 | I7 | I6 | I5 | I4 | I3 | I2 | I1 | I0 | Q2 | Q1 | Q0 | 
-| :--- |:---| :---| :-- |:-- |:--:|--:|--:|--:|--:|--:|
+| :--- |:---| :---| :-- |:-- |:--:|---:|---:|---:|---:|---:|
 |0	|0|	0|	0|	0|	0|	0|	1|	0|	0|	0|
 |0	|0|     0|	0|	0|	0|	1|	x|	0|      0|	1|
 |0	|0|	0|	0|	0|	1|	x|	x|	0|	1|	0|
