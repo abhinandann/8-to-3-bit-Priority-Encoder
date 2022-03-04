@@ -16,9 +16,11 @@
  ##### iii) [Schematic Diagram]()
  ##### iv) [Netlists]()
  #####  v) [Ngspice Plots]()
-#### 6.[REFERENCES]()
-#### 7.[AKNOWLEDGEMENT]()
-#### 8.[AUTHOR]()
+####  6. [STEPS TO GENERATE NgVeri MODEL]()
+####  7. [STEPS TO RUN THE PROJECT]()
+#### 8.[REFERENCES]()
+#### 9.[AKNOWLEDGEMENT]()
+#### 10.[AUTHOR]()
 
 ### 1. ABSTRACT
 
@@ -208,7 +210,7 @@ plot v(q2)
 ###### Q2 = I4+I5+I6+I7
 ![q2](https://user-images.githubusercontent.com/91964227/156745676-c389e84d-3e64-45bf-bc32-bf4ecf340b83.JPG)
 
-### 6. Steps to run generate NgVeri Model
+### 6. Steps to generate NgVeri Model
 1. Open eSim
 2. Run NgVeri-Makerchip
 3. Add top level verilog file in Makerchip Tab
@@ -219,13 +221,13 @@ plot v(q2)
 8. Debug if any errors
 9. Model created successfully
 
-### 7. Steps to run this project
+### 7. Steps to run the project
 1. Open new terminal
-2. Clone this project using the following command
+2. Clone this project using the following command:
 ```
 git clone https://github.com/abhinandann/8-to-3-bit-Priority-Encoder.git
 ```
-3. Change Directory 
+3. Change Directory: 
 ```
 cd esim-workspace/8_3_priorityencoder
 ```
