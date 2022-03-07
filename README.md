@@ -5,24 +5,24 @@
 
 ## Table of Contents
 #### 1.[ABSTRACT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#1-abstract)
-#### 2.[SOFTWARE USED]()
-#### i) [eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#2-esim-eda-tool) 
-#### ii) [Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#3-makerchip)
-#### iii) [Verilator]()
-#### 3.[CIRCUIT DESIGN](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-circuit-design)
+#### 2.[SOFTWARE USED](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#2-software-used)
+#### i) [eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#esim-eda-tool) 
+#### ii) [Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip)
+#### iii) [Verilator](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilator)
+#### 3.[CIRCUIT DESIGN](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#3-circuit-design)
   ##### i) [Reference Circuit](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-circuit)
   ##### ii) [Reference Waveforms](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-waveforms)
-#### 4.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#5-implementation)
+#### 4.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-implementation)
  ##### i) [Verilog Code](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilog-code-for-8-to-3-bit-prirority-encoder)
  ##### ii) [Makerchip plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip-plots)
  ##### iii) [Schematic Diagram](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#schematic-diagram)
  ##### iv) [Netlists](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#netlists)
  #####  v) [Ngspice Plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#ngspice-plots)
-####  5. [STEPS TO GENERATE NgVeri MODEL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#6-steps-to-generate-ngveri-model-1)
-####  6. [STEPS TO RUN THE PROJECT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#7-steps-to-run-the-project-1)
-#### 7.[REFERENCES](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#8-references)
-#### 8.[AKNOWLEDGEMENT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#9-aknowledgement)
-#### 9.[AUTHOR](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#10-author)
+####  5. [STEPS TO GENERATE NgVeri MODEL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#5-steps-to-generate-ngveri-model-1)
+####  6. [STEPS TO RUN THE PROJECT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#6-steps-to-run-the-project-1)
+#### 7.[REFERENCES](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#7-references)
+#### 8.[AKNOWLEDGEMENT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#8-aknowledgement)
+#### 9.[AUTHOR](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#9-author)
 
 ### 1. ABSTRACT
 
@@ -74,8 +74,7 @@ ADC bridge is used to convert the analog input to corresponding digital input, w
 
 #### Reference Waveforms
 
-![1646064727840](https://user-images.githubusercontent.com/91964227/156763256-344aaaed-a965-4751-8dd5-2344420bba41.jpg)
-
+![1646064727840 (1) (1) (1) (1) (1)](https://user-images.githubusercontent.com/91964227/157047196-52288e38-e45f-425e-87f3-98599e97f2bf.jpg)
 
 ### 4. IMPLEMENTATION
 
