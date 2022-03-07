@@ -5,38 +5,46 @@
 
 ## Table of Contents
 #### 1.[ABSTRACT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#1-abstract)
-#### 2.[eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#2-esim-eda-tool) 
-#### 3.[Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#3-makerchip)
-#### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-circuit-design)
+#### 2.[SOFTWARE USED]()
+#### i) [eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#2-esim-eda-tool) 
+#### ii) [Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#3-makerchip)
+#### iii) [Verilator]()
+#### 3.[CIRCUIT DESIGN](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-circuit-design)
   ##### i) [Reference Circuit](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-circuit)
   ##### ii) [Reference Waveforms](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-waveforms)
-#### 5.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#5-implementation)
+#### 4.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#5-implementation)
  ##### i) [Verilog Code](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilog-code-for-8-to-3-bit-prirority-encoder)
  ##### ii) [Makerchip plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip-plots)
  ##### iii) [Schematic Diagram](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#schematic-diagram)
  ##### iv) [Netlists](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#netlists)
  #####  v) [Ngspice Plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#ngspice-plots)
-####  6. [STEPS TO GENERATE NgVeri MODEL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#6-steps-to-generate-ngveri-model-1)
-####  7. [STEPS TO RUN THE PROJECT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#7-steps-to-run-the-project-1)
-#### 8.[REFERENCES](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#8-references)
-#### 9.[AKNOWLEDGEMENT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#9-aknowledgement)
-#### 10.[AUTHOR](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#10-author)
+####  5. [STEPS TO GENERATE NgVeri MODEL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#6-steps-to-generate-ngveri-model-1)
+####  6. [STEPS TO RUN THE PROJECT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#7-steps-to-run-the-project-1)
+#### 7.[REFERENCES](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#8-references)
+#### 8.[AKNOWLEDGEMENT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#9-aknowledgement)
+#### 9.[AUTHOR](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#10-author)
 
 ### 1. ABSTRACT
 
 An encoder is a combinational circuit, it encodes the data from 2^n inputs into an n-bit code. To overcome the disadvantages of conventional binary encoders, priority encoders were designed which gives output based on highest priority given to the input bits. The proposed work shows the implementation of 8-to-3-bit priority encoder, using ADC bridge to convert the analog input to digital and DAC bridge to convert digital output back to analog form.
 
-### 2. eSIM EDA TOOL
+### 2. SOFTWARE USED
+
+### eSIM EDA TOOL
 
 eSim is an open source EDA tool for circuit design, simulation and analysis , developed by FOSSEE Team at IIT Bombay. It is an integrated tool build using open source softwares such as KiCad, Ngspice and GHDL.
 More details on eSIM tool can be found [here](https://esim.fossee.in/)
 
-### 3. Makerchip
+### Makerchip
 
 Makerchip is an opensource tool for developing verilog code for the digital circuits and simulate it. By using using eSim and makerchip we can develop model for our selected digital circuit.
 More details on Makerchip can be found [here](https://www.makerchip.com/)
 
- ### 4. CIRCUIT DESIGN
+### Verilator
+It is a tool which converts Verilog code to C++ objects. 
+More details on verilator can be found [here](https://www.veripool.org/verilator/)
+
+ ### 3. CIRCUIT DESIGN
  
 8-to-3-bit priority encoder consists of 8 inputs: I8 to I1 and 3 outputs: Q2, Q1 and Q0. Each input line corresponds to each octal digit and three outputs generate corresponding binary code. Priority encoder gives output according to highest priority given to the input. If there are two or more inputs are logic high simultaneously then the input with the highest priority is considered by ignoring all other input lines. The input that has the highest priority is encoded first rather than other input lines. Hence, the generated output is based on the priority assigned to the inputs.
 
@@ -69,7 +77,7 @@ ADC bridge is used to convert the analog input to corresponding digital input, w
 ![1646064727840](https://user-images.githubusercontent.com/91964227/156763256-344aaaed-a965-4751-8dd5-2344420bba41.jpg)
 
 
-### 5. IMPLEMENTATION
+### 4. IMPLEMENTATION
 
 #### Verilog Code for 8-to-3-bit Prirority Encoder 
 ```
@@ -211,7 +219,7 @@ plot v(q2)
 ###### Q2 = I4+I5+I6+I7
 ![q2](https://user-images.githubusercontent.com/91964227/156745676-c389e84d-3e64-45bf-bc32-bf4ecf340b83.JPG)
 
-### 6. Steps to generate NgVeri Model
+### 5. Steps to generate NgVeri Model
 1. Open eSim
 2. Run NgVeri-Makerchip
 3. Add top level verilog file in Makerchip Tab
@@ -222,7 +230,7 @@ plot v(q2)
 8. Debug if any errors
 9. Model created successfully
 
-### 7. Steps to run the project
+### 6. Steps to run the project
 1. Open new terminal
 2. Clone this project using the following command:
 ```
@@ -241,17 +249,17 @@ ngspice 8_3_priorityencoder.cir.out
 * Load the project
 * Open eeSchema
 
-### 8. REFERENCES
+### 7. REFERENCES
 1. WatElectronics.com. 2022. Priority Encoder : Truth Table, Differences & Its Applications. Available [HERE](https://www.watelectronics.com/priority-encoder/).
 2. Esim.fossee.in. 2022. Resources | eSim. Available [HERE](https://esim.fossee.in/resources)
 
-### 9. AKNOWLEDGEMENT
+### 8. AKNOWLEDGEMENT
 1. FOSSEE, IIT Bombay
 2. Steve Hoover, Founder, Redwood EDA
 3. [Kunal Ghosh](https://github.com/kunalg123), Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
 4. [Sumanto kar](https://github.com/Eyantra698Sumanto), Sr. Project Technical Assistant, IIT BOMBAY
 
-### 10. AUTHOR
+### 9. AUTHOR
 
 ABHINANDAN R APPANNAVAR, 6th SEM B.E(ECE), SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
 * Contact: abhinandan7353@gmail.com
