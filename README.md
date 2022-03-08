@@ -15,7 +15,7 @@
 #### 4.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-implementation)
  ##### i) [Verilog Code](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilog-code-for-8-to-3-bit-prirority-encoder)
  ##### ii) [Makerchip plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip-plots)
- ##### iii) [Model for 8-to-3-bit Priority Encoder]()
+ ##### iii) [Model for 8-to-3-bit Priority Encoder](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#model-for-8-to-3-bit-priority-encoder)
  ##### iv) [Schematic Diagram](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#schematic-diagram)
  ##### v) [Netlists](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#netlists)
  #####  vi) [Ngspice Plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#ngspice-plots)
