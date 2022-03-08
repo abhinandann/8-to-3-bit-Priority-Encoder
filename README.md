@@ -6,18 +6,19 @@
 ## Table of Contents
 #### 1.[ABSTRACT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#1-abstract)
 #### 2.[SOFTWARE USED](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#2-software-used)
-#### i) [eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#esim-eda-tool) 
-#### ii) [Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip)
-#### iii) [Verilator](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilator)
+##### i) [eSIM EDA TOOL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#esim-eda-tool) 
+##### ii) [Makerchip](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip)
+##### iii) [Verilator](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilator)
 #### 3.[CIRCUIT DESIGN](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#3-circuit-design)
   ##### i) [Reference Circuit](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-circuit)
   ##### ii) [Reference Waveforms](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#reference-waveforms)
 #### 4.[IMPLEMENTATION](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#4-implementation)
  ##### i) [Verilog Code](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#verilog-code-for-8-to-3-bit-prirority-encoder)
  ##### ii) [Makerchip plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#makerchip-plots)
- ##### iii) [Schematic Diagram](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#schematic-diagram)
- ##### iv) [Netlists](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#netlists)
- #####  v) [Ngspice Plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#ngspice-plots)
+ ##### iii) [Model for 8-to-3-bit Priority Encoder]()
+ ##### iv) [Schematic Diagram](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#schematic-diagram)
+ ##### v) [Netlists](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#netlists)
+ #####  vi) [Ngspice Plots](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#ngspice-plots)
 ####  5. [STEPS TO GENERATE NgVeri MODEL](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#5-steps-to-generate-ngveri-model-1)
 ####  6. [STEPS TO RUN THE PROJECT](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#6-steps-to-run-the-project-1)
 #### 7.[REFERENCES](https://github.com/abhinandann/8-to-3-bit-Priority-Encoder#7-references)
@@ -130,6 +131,12 @@ endmodule
 #### Makerchip Plots
 
 ![makerchip_waveform](https://user-images.githubusercontent.com/91964227/156744110-1117a7a8-8179-4edb-a991-655ab4c87b00.JPG)
+
+#### Model For 8-to-3-bit Priority Encoder
+
+![model](https://user-images.githubusercontent.com/91964227/157228203-9869b150-01f7-45b8-a9ff-3ac4df5f66b0.JPG)
+
+![model1](https://user-images.githubusercontent.com/91964227/157228238-b5f448aa-f886-4684-8c92-50fb1dfeac48.JPG)
 
 #### Schematic Diagram
 
